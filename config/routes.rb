@@ -1,4 +1,6 @@
 Store::Application.routes.draw do
+  devise_for :members
+
   devise_for :users
 
   resources :products

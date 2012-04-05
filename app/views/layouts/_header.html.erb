@@ -19,6 +19,14 @@
 			<% end %>
             <li><%= link_to "Contact Us", root_url %></li>
             <li><%= link_to "About" %></li>
+			<% if member_signed_in? %>
+				<li><%= current_member.email %>
+				<li><%= link_to "Account", root_url %></li>
+				<li><%= link_to "Logout", destroy_member_session_path, :method => :delete %>
+			<% else %>		
+				<li><%= link_to "Venue sign up", new_member_registration_path %></li>
+				<li><%= link_to "Venue sign in", new_member_session_path %></li>
+			<% end %>
           </ul>
         </div>
       </div>
