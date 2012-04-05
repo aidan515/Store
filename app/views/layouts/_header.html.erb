@@ -9,10 +9,16 @@
         <a class="brand" href="/">My Roundtable</a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Browse Products", products_path %></li>
-            <li><%= link_to "Price List" %></li>
-            <li><%= link_to "Contact Us" %></li>
-            <li><%= link_to "Cart" %></li>
+			<% if user_signed_in? %>
+			<li><%= current_user.email %></li>
+			<li><%= link_to "Account", root_url %></li>
+			<li><%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+			<% else %>	
+            <li><%= link_to "Sign up", new_user_registration_path %></li> 
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+			<% end %>
+            <li><%= link_to "Contact Us", root_url %></li>
+            <li><%= link_to "About" %></li>
           </ul>
         </div>
       </div>
