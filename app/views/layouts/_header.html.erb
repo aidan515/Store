@@ -10,8 +10,9 @@
         <div class="nav-collapse">
           <ul class="nav">
 			<% if user_signed_in? %>
-			<li><%= current_user.email %></li>
-			<li><%= link_to "Account", show_user_path %></li>
+		
+			<li><%= link_to "#{current_user.first_name}", show_user_path %>
+			
 			<li><%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 			<% else %>	
             <li><%= link_to "Sign up", new_user_registration_path %></li> 
