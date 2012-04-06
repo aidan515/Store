@@ -1,4 +1,12 @@
 Store::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
+  get 'show_user', to: 'users#show', as: 'show_user'
+
   devise_for :members
 
   devise_for :users
