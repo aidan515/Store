@@ -6,8 +6,15 @@
 	<%= f.input :password %>
 	<%= f.input :password_confirmation %>
 	<%= f.input :birthday, :label => "Date of Birth", :as => :date, :start_day => Date.today.day, :start_month => Date.today.month, :start_year => Date.today.year, :order => [:day, :month, :year] %> 
+	<%= f.input :interest_1, :label => "Business interests" %>
+	<%= f.input :interest_2, :label => "Business interests" %>
+	<%= f.input :hobby_1, :label => "Personal interests" %>
+	<%= f.input :hobby_2, :label => "Personal interests" %>
+	<%= f.file_field :user_image %>
 </div>
-
+<% if current_user %>
+	<%= f.button :submit, "Update"%>
+<% else %>
 	<%= f.button :submit, "Sign up" %>
-
+<% end %>
 <% end %>
