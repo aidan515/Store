@@ -1,7 +1,8 @@
 <h3><%= @user.first_name %> <%= @user.surname %></h3>
 <p><%= image_tag @user.user_image_url(:thumb) %></p>
+<p>Description: <%= @user.description %>
 <p>Email: <%= @user.email %></p>
-<p>Birthday: <%= @user.birthday %>
+<p>Birthday: <%= @user.birthday.day %> / <%= @user.birthday.month %> / <%= @user.birthday.year %>
 <p>Business Interests: <%= @user.interest_1%> , <%= @user.interest_2%></p>
 <p>Personal Interests: <%= @user.hobby_1 %>, <%= @user.hobby_2 %></p>
 <%= link_to "Edit profile", edit_user_registration_path%>
