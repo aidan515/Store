@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -13,4 +14,5 @@ class User < ActiveRecord::Base
   validates_presence_of :description, :length => { :maximum => 60 }
   validates_uniqueness_of :email               
   mount_uploader :user_image, UserImageUploader
+
 end

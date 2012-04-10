@@ -4,7 +4,8 @@ Store::Application.routes.draw do
   get 'show_user', to: 'users#show', as: 'show_user'
   get 'contact', to: 'pages#contact', as: 'contact'
   get 'about', to: 'pages#about', as: 'about'
-  devise_for :members
+  get 'show_member', to: 'members#show', as: 'show_member'
+  devise_for :members, :controllers => { :registrations => :registrations}
 
  # devise_for :users
   devise_for :users, :controllers => { :registrations => :registrations }

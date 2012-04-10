@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>Documents/rails_projects/devise_roundtable/app/views/devise/registrations/edit.html.erb</string>
+	<string>../devise_roundtable/app/views/devise/registrations/new.html.erb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,7 +21,7 @@
 	<integer>264</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Documents/rails_projects/devise_roundtable/app/views/devise/_links.erb</key>
+		<key>../devise_roundtable/app/views/devise/registrations/new.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -35,42 +35,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>Documents/rails_projects/devise_roundtable/app/views/devise/registrations/edit.html.erb</key>
+		<key>../devise_roundtable/app/views/devise/sessions/new.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>25</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>Documents/rails_projects/devise_roundtable/app/views/devise/registrations/new.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>Documents/rails_projects/devise_roundtable/config/routes.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -80,14 +52,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Documents/rails_projects/devise_roundtable/app/views/devise/registrations/edit.html.erb</string>
-		<string>Documents/rails_projects/devise_roundtable/config/routes.rb</string>
-		<string>Documents/rails_projects/devise_roundtable/app/views/devise/registrations/new.html.erb</string>
-		<string>Documents/rails_projects/devise_roundtable/app/views/devise/_links.erb</string>
+		<string>../devise_roundtable/app/views/devise/sessions/new.html.erb</string>
+		<string>../devise_roundtable/app/views/devise/registrations/new.html.erb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1504, 700}, {1040, 665}}</string>
+	<string>{{1596, 739}, {1040, 665}}</string>
 </dict>
 </plist>

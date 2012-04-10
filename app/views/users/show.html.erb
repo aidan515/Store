@@ -1,5 +1,9 @@
 <h3><%= @user.first_name %> <%= @user.surname %></h3>
-<p><%= image_tag @user.user_image_url(:thumb) %></p>
+<% if @user.user_image_url %>
+<p><%= image_tag @user.user_image_url(:thumb).to_s %></p>
+<% else %>
+<%= image_tag ("No-picture.jpg") %>
+<% end %>
 <p>Description: <%= @user.description %>
 <p>Email: <%= @user.email %></p>
 <p>Birthday: <%= @user.birthday.day %> / <%= @user.birthday.month %> / <%= @user.birthday.year %>
