@@ -6,9 +6,9 @@
 	<%= f.input :surname%>
     <%= f.input :email, :required => true, :autofocus => true %>
 	<%= f.input :description %>
-    <%= f.input :password, :required => true %>
+    <%= f.input :password, :required => true, :autofocus => true %>
     <%= f.input :password_confirmation, :required => true %>
-	<%= f.input :birthday, :label => "Date of Birth", :as => :date, :start_day => Date.today.day, :start_month => Date.today.month, :start_year => Date.today.year, :order => [:day, :month, :year] %> 
+	<%= f.input :birthday, :label => "Date of Birth", :as => :date, :start_day => Date.today.day, :start_month => Date.today.month, :start_year => Date.today.year - 60, :order => [:day, :month, :year] %> 
 	<%= f.input :interest_1, :label => "Business interests" %>
 	<%= f.input :interest_2, :label => "Business interests" %>
 	<%= f.input :hobby_1, :label => "Personal interests" %>

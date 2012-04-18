@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>../devise_roundtable/app/views/devise/registrations/new.html.erb</string>
+	<string>../devise_roundtable/app/controllers/products_controller.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,6 +21,20 @@
 	<integer>264</integer>
 	<key>metaData</key>
 	<dict>
+		<key>../devise_roundtable/app/controllers/products_controller.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>../devise_roundtable/app/views/devise/registrations/new.html.erb</key>
 		<dict>
 			<key>caret</key>
@@ -54,10 +68,11 @@
 	<array>
 		<string>../devise_roundtable/app/views/devise/sessions/new.html.erb</string>
 		<string>../devise_roundtable/app/views/devise/registrations/new.html.erb</string>
+		<string>../devise_roundtable/app/controllers/products_controller.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1596, 739}, {1040, 665}}</string>
+	<string>{{1520, 739}, {1040, 665}}</string>
 </dict>
 </plist>
